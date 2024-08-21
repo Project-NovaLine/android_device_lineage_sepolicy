@@ -1,3 +1,8 @@
+# Bootanim
+allow system_app bootanim_data_file:dir create_dir_perms;
+allow system_app bootanim_data_file:file create_file_perms;
+set_prop(system_app, bootanim_system_prop)
+
 # Allow Settings to read custom legal URL
 get_prop(system_app, legal_url_prop)
 
